@@ -1,0 +1,8 @@
+.*
+.github
+.husky
+build
+dist
+coverage
+node_modules
+package-lock.json
