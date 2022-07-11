@@ -7,10 +7,7 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "prettier:check": "prettier '**/*' --check --ignore-unknown",
-    "prettier:fix": "prettier '**/*' --write --ignore-unknown",
-    "lint:check": "eslint '*.{js,ts,jsx,tsx,json}' 'src/**/*.{js,ts,jsx,tsx,json}'",
-    "lint:fix": "eslint --fix '*.{js,ts,jsx,tsx,json}' 'src/**/*.{js,ts,jsx,tsx,json}'"
+    "lint": "eslint"
   },
   "dependencies": {
     "@types/node": "^18.0.3",
@@ -37,6 +34,6 @@
     "vite": "^2.9.9"
   },
   "lint-staged": {
-    "**/*": "eslint --fix"
+    "./src/*.{js,jsx,ts,tsx}": "npm run lint"
   }
 }
