@@ -23,11 +23,6 @@ const ErrorFallback = (): JSX.Element => {
   );
 };
 
-let x;
-if (x === -0) {
-  // doSomething()...
-}
-
 interface AppProviderProps {
   children: React.ReactNode;
 }
