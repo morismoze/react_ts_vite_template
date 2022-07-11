@@ -23,5 +23,7 @@ dist-ssr
 *.sln
 *.sw?
 
-# husky
+# linting
+.eslintcache
+6
 .husky
