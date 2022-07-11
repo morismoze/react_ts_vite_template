@@ -15,7 +15,7 @@ const handleUserResponse = (data: UserResponse) => {
 };
 
 const loadUser = async () => {
-  // if jwt exists in LS
+  // if jwt exists in LS check if it is valid, otherwise return null
   if (false) {
     const currentUser = await axios.get('/auth/current');
     return currentUser.data;

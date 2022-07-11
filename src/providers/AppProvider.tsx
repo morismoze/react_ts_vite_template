@@ -4,7 +4,6 @@ import { HelmetProvider } from 'react-helmet-async';
 import { ErrorBoundary } from 'react-error-boundary';
 import { QueryClientProvider } from 'react-query';
 import { ReactQueryDevtools } from 'react-query/devtools';
-import { Router } from 'wouter';
 
 import { AuthProvider } from '@/api/auth';
 import { queryClient } from '@/lib/react-query';
@@ -27,7 +26,7 @@ const ErrorFallback = (): JSX.Element => {
 interface AppProviderProps {
   children: React.ReactNode;
 }
-
+console.log('test');
 export const AppProvider = ({ children }: AppProviderProps) => {
   return (
     <React.Suspense fallback={<Loader />}>
@@ -35,14 +34,10 @@ export const AppProvider = ({ children }: AppProviderProps) => {
         <HelmetProvider>
           <QueryClientProvider client={queryClient}>
             {import.meta.env.DEV && <ReactQueryDevtools />}
-            <AuthProvider>
-              <Router base="home">{children}</Router>
-            </AuthProvider>
+            <AuthProvider>{children}</AuthProvider>
           </QueryClientProvider>
         </HelmetProvider>
       </ErrorBoundary>
     </React.Suspense>
   );
 };
-
-export default AppProvider;

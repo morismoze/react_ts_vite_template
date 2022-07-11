@@ -7,7 +7,10 @@ Opinionated React TS starter template with Vite (fast bundling, instant server s
 - React 18 (latest)
 - TypeScript
 - Vite
-- wouter (routing, smaller footprint than react-router)
+- Querying data and state management through react-query library
+- wouter (smaller footprint than react-router) - Includes private routes
+- Authorization is done through react-query-auth library
+- Lazy import with Suspense - lazy imported pages
 - Prettier, ESLint
 - husky with lint-staged (pre-commit hook)
 

@@ -1,12 +1,10 @@
-import './App.css';
-import AppProvider from './providers/AppProvider';
+import { AppProvider } from './providers';
+import { Routes } from './router';
 
-function App() {
+export const App = () => {
   return (
     <AppProvider>
-      <div></div>
+      <Routes />
     </AppProvider>
   );
-}
-
-export default App;
+};
