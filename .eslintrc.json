@@ -21,8 +21,5 @@
       }
     }
   ],
-  "rules": {},
-  "globals": {
-    "JSX": "readonly"
-  }
+  "rules": {}
 }

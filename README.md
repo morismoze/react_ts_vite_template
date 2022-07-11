@@ -14,6 +14,12 @@ Opinionated React TS starter template with Vite (fast bundling, instant server s
 - Prettier, ESLint
 - husky with lint-staged (pre-commit hook)
 
+- If husky and eslint don't work:
+
+1. Delete .husky and eslintrc.json
+2. `npx eslint --init` (with standard ruleset)
+3. `npx mrm@2 lint-staged`
+
 ## How to start
 
 - Clone this repo and then:
